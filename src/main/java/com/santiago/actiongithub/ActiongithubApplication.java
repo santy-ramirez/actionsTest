@@ -17,4 +17,10 @@ public class ActiongithubApplication {
 		return"Hello World! amazon web service2";
 	}
 
+	}
+	@GetMapping("/")
+	public String helloAws() {
+		return"Hello World! amazon aws Elastic Beanstalk";
+	}
+
 }
