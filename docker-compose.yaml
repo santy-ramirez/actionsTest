@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+app:
+  container_name: exampleapp
+  build: .
+  restart: always
+  volumes:
+    - .:/app
+
+  port:
+    - 8080:8080  
