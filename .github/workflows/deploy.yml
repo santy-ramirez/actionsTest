@@ -7,7 +7,8 @@ jobs:
   EC2-Deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{vars.KEY}}
+      - run: echo ${{vars.KEY}} > ./MYLLAVE.pem
+      - run: cat MYLLAVE.pem
       - run: chmod 400 ${{ secrets.SSKEY }}
       - run: ssh -i ${{ secrets.SSKEY }} ubuntu@ec2-54-91-176-242.compute-1.amazonaws.com
       - run: ls
