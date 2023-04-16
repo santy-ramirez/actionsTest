@@ -10,4 +10,5 @@ jobs:
       - run: chmod 400 ${{ secrets.SSKEY }}
       - run: ssh -i ${{ secrets.SSKEY }} ubuntu@ec2-54-91-176-242.compute-1.amazonaws.com
       - run: ls
+      - run: pwd
       
