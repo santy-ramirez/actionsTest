@@ -11,8 +11,8 @@ jobs:
       - run: echo "$SSH_HOST"
       - run: echo $SSH_HOST > ./MYLLAVE.pem
       - run: cat MYLLAVE.pem
-      - run: chmod 400 ${{ secrets.SSKEY }}
-      - run: ssh -i ${{ secrets.SSKEY }} ubuntu@ec2-54-91-176-242.compute-1.amazonaws.com
+      - run: chmod 400 MYLLAVE.pem
+      - run: ssh -i "MYLLAVE.pem" ubuntu@ec2-54-91-176-242.compute-1.amazonaws.com
       - run: ls
       - run: pwd
         env:
