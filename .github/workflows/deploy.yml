@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "hola"
-      - run: | 
-        echo "$SSH_HOST"
+      - run: echo "$SSH_HOST"
       - run: echo $SSH_HOST > ./MYLLAVE.pem
       - run: cat MYLLAVE.pem
       - run: chmod 400 ${{ secrets.SSKEY }}
