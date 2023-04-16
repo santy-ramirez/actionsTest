@@ -7,7 +7,7 @@ jobs:
   EC2-Deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: "hola"
+      - run: echo "hola"
       - run: | 
         echo "$SSH_HOST"
       - run: echo $SSH_HOST > ./MYLLAVE.pem
