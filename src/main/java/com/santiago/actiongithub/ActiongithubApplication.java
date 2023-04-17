@@ -15,7 +15,7 @@ public class ActiongithubApplication {
 	}
 	@GetMapping("/helloworld")
 	public String hello() {
-		return"HELLO World! amazon web service";
+		return"HELLO ! AMAZON WEB SERVICES";
 	}
 
 	
